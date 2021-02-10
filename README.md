@@ -1,4 +1,4 @@
-Coursera Specialization "Programming in Python" MAIL.RU GROUP and MIPT
+Coursera Specialization "Programming in Python" from MAIL.RU GROUP and MIPT
 ===
 https://www.coursera.org/specializations/programming-in-python
 ***
