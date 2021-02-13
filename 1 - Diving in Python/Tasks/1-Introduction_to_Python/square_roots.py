@@ -7,8 +7,8 @@ c = int(sys.argv[3])
 
 D = b ** 2 - 4 * a * c
 
-x1 = int((-b + sqrt(D)) / (2 * a))
-x2 = int((-b - sqrt(D)) / (2 * a))
+x1 = (-b + sqrt(D)) / (2 * a)
+x2 = (-b - sqrt(D)) / (2 * a)
 
-print(x1)
-print(x2)
+print(int(x1))
+print(int(x2))
