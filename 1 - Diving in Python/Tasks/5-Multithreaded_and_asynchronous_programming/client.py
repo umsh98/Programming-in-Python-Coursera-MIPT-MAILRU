@@ -81,8 +81,6 @@ class Client:
             raise ClientError(err)
 
         for key in metrics_dict.keys():
-            val = metrics_dict[key]
-            val.sort(key=lambda i: i[0])
-            metrics_dict[key] = val
+            metrics_dict[key].sort(key=lambda i: i[0])
 
         return metrics_dict
