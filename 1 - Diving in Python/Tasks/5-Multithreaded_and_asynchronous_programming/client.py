@@ -71,11 +71,11 @@ class Client:
 
         try:
             for metric in data.split("\n"):
-                key, val, timestamp = metric.split()
+                key, value, timestamp = metric.split()
                 if key not in metrics_dict:
-                    metrics_dict[key] = [(int(timestamp), float(val))]
+                    metrics_dict[key] = [(int(timestamp), float(value))]
                 else:
-                    metrics_dict[key].append((int(timestamp), float(val)))
+                    metrics_dict[key].append((int(timestamp), float(value)))
         except Exception as err:
             print("Server returned invalid data")
             raise ClientError(err)
